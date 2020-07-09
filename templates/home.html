@@ -1,10 +1,13 @@
 <!DOCTYPE html>                         <! –– All html documents must start with this declaration -->
 <html>                                  <! –– html document always begins with html, ends with /html -->
+{% extends "layout.html" %}             <! -- extending layout file, runs layout template and puts this block content @ line 16 of layout -- >
+{% block content %}
 <div class="home">                      <! –– allows user to apply CSS styling -->
 <body>                                  <! –– Visible parts of html are between body and /body -->
 <h1>My Personal Website</h1>
 <p>Hi, this is my personal website.</p>
 </div>
+{% endblock %}
 </body>
 </html>
 
